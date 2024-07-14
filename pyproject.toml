@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "scraping-project"
+version = "0.1.0"
+description = "scraping a website"
+authors = ["Akshit Gautam"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+pydantic = "^2.8.2"
+redis = "^5.0.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
