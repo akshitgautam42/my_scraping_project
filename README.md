@@ -60,7 +60,6 @@ Run tests using:
 poetry run pytest
 ```
 
-Ensure your tests cover API routes, integration between components, and unit tests for individual functions.
 
 ## Security
 The API uses a simple API key mechanism for basic security.
