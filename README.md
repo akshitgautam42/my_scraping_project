@@ -1,6 +1,3 @@
-Here's the complete content for your README.md file:
-
-```markdown
 # DentalStall Scraper
 
 ## Overview
@@ -66,7 +63,4 @@ poetry run pytest
 Ensure your tests cover API routes, integration between components, and unit tests for individual functions.
 
 ## Security
-The API uses a simple API key mechanism for basic security. Make sure to replace this with a more robust authentication method for production environments.
-```
-
-You can copy this content into a new file named `README.md` within your project directory. This setup will provide all necessary instructions and information about your scraper application.
+The API uses a simple API key mechanism for basic security.
