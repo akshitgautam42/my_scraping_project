@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from urllib3.util.retry import Retry  # Corrected import
 from requests.adapters import HTTPAdapter
 from src.models import Product, ScrapeSettings
-from src.storage import ImageStorage, JsonStorage
+from src.storage.json_storage import  JsonStorage
+from src.storage.image_storage import ImageStorage
 from urllib.parse import unquote, urlparse
 
 
@@ -31,7 +32,7 @@ class ScraperService:
 
     def scrape_products(self, settings:ScrapeSettings):
         products = []
-        json_storage = JsonStorage('../products.json')
+        json_storage = JsonStorage('products.json')
         for page in range(1, settings.pages + 1):
             soup = self.fetch_page(page)
             items = soup.find_all('div', class_='product-inner')
