@@ -32,7 +32,7 @@ poetry install
   - `json_storage.py`: Handles storing data in JSON format.
   - `image_storage.py`: Manages downloading and storing images.
 - `test/`: Contains unit and integration tests.
-- `.env`: (Not included in repository) Should contain environment variables.
+- `.env.sample`: Provide sample of variable to be contained in environment file.
 
 ## Running the Application
 Start the server with:
